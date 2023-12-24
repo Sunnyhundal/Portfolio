@@ -1,11 +1,13 @@
 import About from "@/components/about";
 import Intro from "@/components/intro";
+import Project from "@/components/project";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center flex-wrap justify-center pt-32">
+    <main className="flex flex-col items-center pt-32">
       <Intro />
       <About />
+      <Project />
     </main>
   );
 }
