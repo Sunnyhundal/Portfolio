@@ -1,24 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 
 export default function Header() {
-  return (
-    <header className="flex fixed z-[999] p-6 bg-slate-200 justify-between opacity-80 drop-shadow-md w-full">
-      <div className="flex items-center justify-center text-2xl">
-        Sunny Hundal
-      </div>
+  const [showMenu, setShowMenu] = useState(false);
 
-      <nav className="flex">
-        <ul className="flex">
+  return (
+    <header className="flex fixed z-[999] p-3 md:p-6 bg-slate-200 justify-between items-center opacity-80 drop-shadow-md w-full">
+      <div className="text-2xl md:text-3xl font-semibold">Sunny Hundal</div>
+
+      <nav className={`md:flex ${showMenu ? "block" : "hidden"}`}>
+        <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
           {links.map((link) => (
-            <li key={link.hash} className=" flex text-stone-500 items-center">
+            <li key={link.hash} className="text-stone-500">
               <Link
                 href={link.hash}
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-900 active:bg-slate-400 transition"
+                className="hover:text-gray-900"
               >
                 {link.name}
               </Link>
@@ -26,6 +26,18 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+
+      <div className="md:hidden">
+        <button
+          className="p-2"
+          onClick={() => setShowMenu(!showMenu)}
+          aria-label="Toggle Menu"
+        >
+          <div className="w-6 h-px bg-gray-900 my-1"></div>
+          <div className="w-6 h-px bg-gray-900 my-1"></div>
+          <div className="w-6 h-px bg-gray-900 my-1"></div>
+        </button>
+      </div>
     </header>
   );
 }
