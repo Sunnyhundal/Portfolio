@@ -13,7 +13,7 @@ export default function Project() {
           key={project.name}
           className="flex flex-col md:flex-row  w-full grow mb-5 md:mb-0"
         >
-          <div className="flex items-center justify-center m-5 w-full md:w-1/2">
+          <div className="flex items-center justify-center m-5 w-full md:w-1/2 ">
             <Image
               src={project.image}
               alt={project.name}
@@ -29,10 +29,23 @@ export default function Project() {
             <span className="mt-3 md:mt-10">
               <p className="text-base md:text-lg">{project.description}</p>
             </span>
-            <div className="flex justify-center md:justify-end mt-5 md:mt-10">
+            <div className="flex flex-wrap mt-3">
+              {project.tech.map((tech, index) => (
+                <span
+                  key={index}
+                  className="bg-purple-300 m-1 px-3 py-1 rounded-full text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex justify-center mt-5">
               <button className="flex items-center justify-center rounded-xl bg-purple-500 p-2 md:p-3 drop-shadow-md">
-                {" "}
-                View Project{" "}
+                View Project
+              </button>
+
+              <button className="flex items-center justify-center rounded-xl bg-purple-500 p-2 ml-3 md:p-3 drop-shadow-md">
+                View Code
               </button>
             </div>
           </div>
