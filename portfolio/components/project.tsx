@@ -8,12 +8,12 @@ export default function Project() {
       className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 drop-shadow-md"
       id="projects"
     >
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <div
-          key={project.name}
+          key={index}
           className="flex flex-col md:flex-row  w-full grow mb-5 md:mb-0"
         >
-          <div className="flex items-center justify-center m-5 w-full md:w-1/2 ">
+          <div className="flex items-center justify-center m-5 w-full md:w-1/2">
             <Image
               src={project.image}
               alt={project.name}
@@ -30,24 +30,27 @@ export default function Project() {
               <p className="text-base md:text-lg">{project.description}</p>
             </span>
             <div className="flex flex-wrap mt-3">
-              {project.tech.map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-purple-300 m-1 px-3 py-1 rounded-full text-sm"
-                >
-                  {tech}
+              {project.tech.map((tech, techIndex) => (
+                <span key={techIndex} className="inline-block">
+                  <a
+                    href={project.github} // Assuming each project object has a 'github' field containing the GitHub link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-purple-300 m-1 px-3 py-1 rounded-full text-sm inline-block"
+                  >
+                    {tech}
+                  </a>
                 </span>
               ))}
             </div>
-            <div className="flex justify-center mt-5">
-              <button className="flex items-center justify-center rounded-xl bg-purple-500 p-2 md:p-3 drop-shadow-md">
-                View Project
-              </button>
-
-              <button className="flex items-center justify-center rounded-xl bg-purple-500 p-2 ml-3 md:p-3 drop-shadow-md">
-                View Code
-              </button>
-            </div>
+            <a
+              href={project.github} // Assuming each project object has a 'github' field containing the GitHub link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-1 px-2 rounded text-sm inline-block w-[5rem] text-center"
+            >
+              View Code
+            </a>
           </div>
         </div>
       ))}
