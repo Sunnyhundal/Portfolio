@@ -18,7 +18,7 @@ export default function About() {
         transition={{ duration: 0.25 }}
       >
         <div>
-          <p className="text-xl font-semibold">Get to know me</p>
+          <p className="text-xl font-semibold mb-5">Get to know me</p>
           <p className="text-l">
             I'm a full-stack developer located on Vancouver Island, BC. I'm
             passionate about making accessible websites that just work. I'm
@@ -28,16 +28,16 @@ export default function About() {
             love to hear from you!
           </p>
           <div className="flex justify-center lg:justify-end mt-5 lg:mt-10">
-            <button className="flex rounded-xl bg-purple-500 p-2 drop-shadow-md">
+            <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
               {" "}
-              Contact me{" "}
+              <a href="#contact">Contact me</a>
             </button>
           </div>
         </div>
       </motion.div>
 
       <div className="bg-white p-6 lg:p-24 grow rounded-xl lg:ml-2.5 drop-shadow-md">
-        <p className="text-xl font-semibold">Skills</p>
+        <p className="text-xl font-semibold mb-5">Skills</p>
         <div className="grid grid-cols-1 gap-2 md:grid-cols-1">
           <div>
             <p className="text-l">Front-end</p>
