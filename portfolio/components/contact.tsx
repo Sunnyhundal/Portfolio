@@ -3,10 +3,10 @@ import React from "react";
 export default function Contact() {
   return (
     <div
-      className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 shadow-md"
+      className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 shadow-md mb-5"
       id="contact"
     >
-      <p className="text-lg">
+      <p className="text-md text-gray-500">
         Please contact me directly at contact@sunnyhundal.ca or use the form
         below.
       </p>
