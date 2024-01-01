@@ -25,14 +25,14 @@ export default function Contact() {
           placeholder="Enter your message"
         ></textarea>
         <button
-          className="flex mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
+          className="group flex mt-4 text-xs bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
           type="submit"
         >
           Submit{" "}
           <span className="ml-2">
             <FontAwesomeIcon
               icon={faPlane}
-              className="-rotate-45 hover:animate-bounce w-6 h-6"
+              className="-rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 w-4 h-4"
             />
           </span>
         </button>
