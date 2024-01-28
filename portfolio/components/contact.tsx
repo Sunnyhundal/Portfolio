@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
@@ -14,15 +16,25 @@ export default function Contact() {
         below.
       </p>
 
-      <form className="mt-4">
+      <form
+        className="mt-4"
+        action={async (formData) => {
+          console.log(formData.get("senderEmail"));
+          console.log(formData.get("message"));
+        }}
+      >
         <input
           className="border border-gray-300 rounded-md p-2 w-full"
           type="email"
-          placeholder="Enter your email"
+          name="senderEmail"
+          required
+          placeholder="Your email"
         />
         <textarea
           className="mt-2 border border-gray-300 rounded-md p-2 w-full h-24"
-          placeholder="Enter your message"
+          name="message"
+          required
+          placeholder="Your message"
         ></textarea>
         <button
           className="group flex mt-4 text-xs bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded"
