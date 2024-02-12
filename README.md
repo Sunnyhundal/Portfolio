@@ -3,18 +3,18 @@
 ## The Project:
 
 ### The goal of this project:
-The goal of this project is to create a portfolio website that will showcase my projects and skills. The website will be responsive and will be optimized for different screen sizes.
+This project aims to create a portfolio website that will showcase my projects and skills. The website will be responsive and will be optimized for different screen sizes.
 
 ### The website will include:
 * A navigation bar
 * A section that will contain a short description of myself and my skills
 * A section with my projects
-  * Each project will have a page containing: a title, a description, a link to the project and a link to the GitHub repository
+  * Each project will have a page containing a title, a description, a link to the project and a link to the GitHub repository
 * A section that will contain a contact form
   * The section will contain a form that will allow the user to send me an email
 * A footer
 
-### The website will be created using:
+### The website will be created using the following:
 * HTML
 * Tailwindcss
 * React
