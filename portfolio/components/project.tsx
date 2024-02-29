@@ -19,7 +19,7 @@ export default function Project() {
           key={index}
           className="flex flex-col md:flex-row  w-full grow mb-5 md:mb-0"
         >
-          <div className="flex items-center justify-center m-5 w-full md:w-1/2">
+          <div className="flex items-center justify-center m-5 md:w-full">
             <Image
               src={project.image}
               alt={project.name}
@@ -28,7 +28,7 @@ export default function Project() {
               className="border-2 border-gray-900 drop-shadow-sm"
             />
           </div>
-          <div className="flex flex-col justify-center m-5  w-full md:w-1/2">
+          <div className="flex flex-col justify-center m-5 md:w-full">
             <span>
               <p className="text-xl font-semibold">{project.name}</p>
             </span>
@@ -37,12 +37,12 @@ export default function Project() {
             </span>
             <div className="flex flex-wrap mt-3">
               {project.tech.map((tech, techIndex) => (
-                <span key={techIndex} className="inline-block">
+                <span key={techIndex} className="inline-block font-semibold text-white">
                   <a
                     href={project.github} // Assuming each project object has a 'github' field containing the GitHub link
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-300 m-1 px-3 py-1 rounded-full text-sm inline-block"
+                    className="bg-purple-400 m-1 px-3 py-1 rounded-full text-sm inline-block border border-purple-500"
                   >
                     {tech}
                   </a>
