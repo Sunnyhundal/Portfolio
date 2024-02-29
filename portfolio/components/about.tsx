@@ -13,9 +13,9 @@ export default function About() {
     >
       <motion.div
         className="bg-slate-200 p-6 lg:p-12 grow opacity-75 lg:w-1/3 lg:mr-2.5 rounded-xl drop-shadow-md mb-5 lg:mb-0 whitespace-pre-wrap md:w-2/3"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.25 }}
+        initial={{ opacity: 0, x: -100}}
+        animate={{ opacity: 1, x: 0}}
+        transition={{ duration: 1 }}
       >
         <div>
           <p className="text-xl font-semibold mb-5">Get to know me</p>
@@ -35,8 +35,8 @@ export default function About() {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, x: 100}}
+        animate={{ opacity: 1, x: 0}}
         transition={{ duration: 1 }}
         className="flex items-center lg:h-2/3 mb-5 lg:mb-0 md:w-2/3 md:items-center lg:items-stretch"
       >
