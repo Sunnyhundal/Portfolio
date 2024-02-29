@@ -4,11 +4,12 @@ export default function Footer() {
       <div className="flex flex-col justify-between  bg-black w-full p-[5rem] ">
         <div className="flex flex-row item-start justify-center">
           <p className="text-white">Sunny Hundal</p>
-          <p className="text-white">Full Stack Developer</p>
+          <p className="text-white"></p>
         </div>
         <div className="flex flex-row item-start justify-center">
-          <p className="text-white"> © 2021 Sunny Hundal</p>
-          <p className="text-white">All Rights Reserved</p>
+          <p className="text-white"> </p>
+          <p className="text-white">Please feel free to connect with me on my other socials</p>
+          
           </div>
       </div>
     </footer>
