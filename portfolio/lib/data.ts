@@ -138,7 +138,7 @@ export const projects = [
       name: "PhotoLabs",
       description: "The PhotoLabs project for the Web Development React course programming. The project is a basic web application allowing users to share photos.",
       tech: ["React", "Node.js", "Express", "PostgresSQL", "Bootstrap"],
-      image: "/images/photolab.png",
+      image: "/images/test.png",
       link: "",
       github: "https://github.com/Sunnyhundal/Photolabs",
     },
