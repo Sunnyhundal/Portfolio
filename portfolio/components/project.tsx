@@ -10,14 +10,14 @@ export default function Project() {
     <motion.div
       className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 drop-shadow-md"
       id="projects"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, x: -100}}
+      animate={{ opacity: 1, x: 0}}
       transition={{ duration: 1 }}
     >
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row  w-full grow mb-5 md:mb-0"
+          className="flex flex-col md:flex-row w-full grow mb-5 md:mb-0"
         >
           <div className="flex items-center justify-center m-5 md:w-full">
             <Image
