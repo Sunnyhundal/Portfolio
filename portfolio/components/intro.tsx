@@ -8,8 +8,8 @@ export default function Intro() {
   return (
     <motion.div
       className="flex items-center justify-center w-full md:w-2/3 h-auto md:h-2/3 bg-white rounded-2xl p-8 md:p-32 drop-shadow-md"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
     >
       <div>
