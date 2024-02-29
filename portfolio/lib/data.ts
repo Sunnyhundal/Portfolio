@@ -93,6 +93,27 @@ export const skills = [
       simpleicon: "postgresql",
       area: "Backend",
     },
+    {
+      name: "Supabase",
+      simpleicon: "supabase",
+      area: "Backend",
+    },
+    {
+      name: "Tailwind CSS",
+      simpleicon: "tailwindcss",
+      area: "Frontend",
+    },
+    {
+      name: "jest",
+      simpleicon: "jest",
+      area: "Tools",
+    },
+    {
+      name: "cypress",
+      simpleicon: "cypress",
+      area: "Tools",
+    }
+
 
 ] as const;
 
