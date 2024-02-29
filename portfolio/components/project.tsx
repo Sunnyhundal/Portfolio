@@ -1,13 +1,21 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import { projects } from "@/lib/data";
+import { motion } from "framer-motion";
 
 export default function Project() {
   return (
-    <div
-      className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 drop-shadow-md"
-      id="projects"
-    >
+
+    <motion.div
+    className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 drop-shadow-md"
+    id="projects"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+
       {projects.map((project, index) => (
         <div
           key={index}
@@ -54,6 +62,7 @@ export default function Project() {
           </div>
         </div>
       ))}
-    </div>
+
+  </motion.div>
   );
 }

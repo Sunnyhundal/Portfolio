@@ -4,12 +4,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
 import { Span } from "next/dist/trace";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div
+    <motion.div
       className="flex items-center justify-center w-full md:w-2/3 h-full md:h-2/3 mt-5 bg-white rounded-2xl flex-col p-8 md:p-32 shadow-md mb-5"
       id="contact"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.25 }}
     >
       <p className="text-md text-gray-500">
         Please contact me directly at contact@sunnyhundal.ca or use the form
@@ -49,6 +53,6 @@ export default function Contact() {
           </span>
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }

@@ -26,7 +26,11 @@ export default function About() {
           </div>
         </div>
       </motion.div>
-
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
       <div className="bg-white p-6 lg:p-12 grow rounded-xl lg:ml-2.5 drop-shadow-md">
         <p className="text-xl font-semibold mb-5">Skills</p>
         <div className="grid grid-cols-1 gap-1 md:grid-cols-3 lg:grid-cols-1">
@@ -35,6 +39,7 @@ export default function About() {
           <SkillList title="Other" area="Tools" />
         </div>
       </div>
+      </motion.div>
     </div>
   );
 }
