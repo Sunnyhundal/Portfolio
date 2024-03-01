@@ -112,6 +112,26 @@ export const skills = [
       name: "cypress",
       simpleicon: "cypress",
       area: "Tools",
+    },
+    {
+      name: "Bootstrap",
+      simpleicon: "bootstrap",
+      area: "Frontend",
+    },
+    {
+      name: "rails",
+      simpleicon: "rubyonrails",
+      area: "Backend",
+    },
+    {
+      name: "Ruby",
+      simpleicon: "ruby",
+      area: "Backend",
+    },
+    {
+      name: "Mocha",
+      simpleicon: "mocha",
+      area: "Tools",
     }
 
 
