@@ -20,7 +20,7 @@ export default function Header() {
         <nav className={`md:flex ${showMenu ? "block" : "hidden"}`}>
           <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
             {links.map((link) => (
-              <li key={link.hash} className="text-stone-500">
+              <li key={link.hash} className="text-stone-500 text-lg">
                 <Link href={link.hash} className="hover:text-gray-900">
                   {link.name}
                 </Link>

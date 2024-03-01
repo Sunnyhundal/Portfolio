@@ -112,6 +112,7 @@ export const skills = [
       name: "cypress",
       simpleicon: "cypress",
       area: "Tools",
+
     },
     {
       name: "Bootstrap",
@@ -132,6 +133,7 @@ export const skills = [
       name: "Mocha",
       simpleicon: "mocha",
       area: "Tools",
+
     }
 
 

@@ -8,6 +8,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-row item-start justify-center">
           <p className="text-white"> </p>
+
           <p className="text-white">
             Please feel free to connect with me on my other socials
           </p>
@@ -38,6 +39,10 @@ export default function Footer() {
                 className="w-8 h-8 bg-white rounded-full border-3 border-black"
               />
             </a>
+
+          <p className="text-white">Please feel free to connect with me on my other socials</p>
+          
+
           </div>
         </div>
       </div>
