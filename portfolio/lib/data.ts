@@ -133,8 +133,12 @@ export const skills = [
       name: "Mocha",
       simpleicon: "mocha",
       area: "Tools",
-
-    }
+    },
+    {
+       name: "Chai",
+        simpleicon: "chai",
+        area: "Tools",
+    },
 
 
 ] as const;
