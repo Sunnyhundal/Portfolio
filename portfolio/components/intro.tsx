@@ -15,13 +15,13 @@ export default function Intro() {
       <div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="mb-5">
-            <Image
+            {/* <Image
               src="/images/sunny.png"
               alt="Sunny Hundal"
               width={200}
               height={200}
               className="border-2 border-gray-900 rounded-full w-32 h-32 md:w-40 md:h-40 drop-shadow-sm"
-            />
+            /> */}
           </div>
           <p className="text-base md:text-xl">
             <span className="flex flex-col text-2xl md:text-4xl font-bold mb-3">
