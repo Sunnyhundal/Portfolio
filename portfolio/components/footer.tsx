@@ -13,7 +13,9 @@ export default function Footer() {
             Please feel free to connect with me on my other socials
           </p>
 
-          <div className="flex flex-row item-start justify-center">
+
+        </div>
+        <div className="flex flex-row item-start justify-center">
             <a
               href="https://www.linkedin.com/in/sunny-hundal-1b4a2b1b3/"
               target="_blank"
@@ -40,11 +42,7 @@ export default function Footer() {
               />
             </a>
 
-          <p className="text-white">Please feel free to connect with me on my other socials</p>
-          
-
           </div>
-        </div>
       </div>
     </footer>
   );

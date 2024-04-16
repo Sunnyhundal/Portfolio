@@ -20,13 +20,13 @@ export default function About() {
         <div>
           <p className="text-xl font-semibold mb-5">Get to know me</p>
           <p className="text-l">
-            I'm a full-stack developer located on Vancouver Island, BC. I'm
-            passionate about making accessible websites that just work. I'm
-            currently working on a few projects, including a website for a local
-            business and a personal project that I'm hoping to launch soon. if
-            you're interested in working together, please reach out to me. I'd
-            love to hear from you!
-          </p>
+  I&apos;m a full-stack developer located on Vancouver Island, BC. I&apos;m
+  passionate about making accessible websites that just work. I&apos;m
+  currently working on a few projects, including a website for a local
+  business and a personal project that I&apos;m hoping to launch soon. If
+  you&apos;re interested in working together, please reach out to me. I&apos;d
+  love to hear from you!
+</p>
           <div className="flex justify-center lg:justify-end mt-5 lg:mt-10">
             <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
               <a href="#contact">Contact me</a>
