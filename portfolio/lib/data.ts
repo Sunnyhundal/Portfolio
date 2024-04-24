@@ -139,6 +139,11 @@ export const skills = [
         simpleicon: "chai",
         area: "Tools",
     },
+    {
+      name: "Sass",
+      simpleicon: "sass",
+      area: "Frontend",
+    }
 
 
 ] as const;
