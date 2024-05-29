@@ -21,21 +21,21 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <image
                 src="https://unpkg.com/simple-icons@v10/icons/linkedin.svg"
                 alt="linkedin"
                 className="w-8 h-8 bg-white rounded-full border-3 border-black"
               />
             </a>
             <a href="" target="_blank" rel="noopener noreferrer">
-              <img
+              <image
                 src="https://unpkg.com/simple-icons@v10/icons/github.svg"
                 alt="github"
                 className="w-8 h-8 bg-white rounded-full border-3 border-black"
               />
             </a>
             <a href="" target="_blank" rel="noopener noreferrer">
-              <img
+              <image
                 src="https://unpkg.com/simple-icons@v10/icons/twitter.svg"
                 alt="twitter"
                 className="w-8 h-8 bg-white rounded-full border-3 border-black"

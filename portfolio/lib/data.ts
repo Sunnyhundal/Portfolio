@@ -99,17 +99,17 @@ export const skills = [
       area: "Backend",
     },
     {
-      name: "Tailwind CSS",
+      name: "Tailwind",
       simpleicon: "tailwindcss",
       area: "Frontend",
     },
     {
-      name: "jest",
+      name: "Jest",
       simpleicon: "jest",
       area: "Tools",
     },
     {
-      name: "cypress",
+      name: "Cypress",
       simpleicon: "cypress",
       area: "Tools",
 
@@ -120,7 +120,7 @@ export const skills = [
       area: "Frontend",
     },
     {
-      name: "rails",
+      name: "Rails",
       simpleicon: "rubyonrails",
       area: "Backend",
     },
@@ -139,6 +139,11 @@ export const skills = [
         simpleicon: "chai",
         area: "Tools",
     },
+    {
+      name: "SASS",
+      simpleicon: "sass",
+      area: "Frontend",
+    }
 
 
 ] as const;
