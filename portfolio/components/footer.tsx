@@ -12,37 +12,7 @@ export default function Footer() {
           <p className="text-white">
             Please feel free to connect with me on my other socials
           </p>
-
-
         </div>
-        <div className="flex flex-row item-start justify-center">
-            <a
-              href="https://www.linkedin.com/in/sunny-hundal-1b4a2b1b3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <image
-                src="https://unpkg.com/simple-icons@v10/icons/linkedin.svg"
-                alt="linkedin"
-                className="w-8 h-8 bg-white rounded-full border-3 border-black"
-              />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <image
-                src="https://unpkg.com/simple-icons@v10/icons/github.svg"
-                alt="github"
-                className="w-8 h-8 bg-white rounded-full border-3 border-black"
-              />
-            </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <image
-                src="https://unpkg.com/simple-icons@v10/icons/twitter.svg"
-                alt="twitter"
-                className="w-8 h-8 bg-white rounded-full border-3 border-black"
-              />
-            </a>
-
-          </div>
       </div>
     </footer>
   );

@@ -17,7 +17,7 @@ export default function Contact() {
     >
       <p className="text-md text-gray-500">
         Please contact me directly at contact@sunnyhundal.ca or use the form
-        below.
+        below. (I typically respond within 24 hours)
       </p>
 
       <form

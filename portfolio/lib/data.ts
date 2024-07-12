@@ -1,5 +1,3 @@
-import { exportTraceState } from "next/dist/trace";
-
 export const links = [
   {
     name: "Home",
