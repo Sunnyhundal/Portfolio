@@ -29,17 +29,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className="md:hidden">
-          <button
-            className="p-2"
-            onClick={() => setShowMenu(!showMenu)}
-            aria-label="Toggle Menu"
-          >
-            <div className="w-6 h-px bg-gray-900 my-1"></div>
-            <div className="w-6 h-px bg-gray-900 my-1"></div>
-            <div className="w-6 h-px bg-gray-900 my-1"></div>
-          </button>
-        </div>
+
       </header>
     </motion.div>
   );
