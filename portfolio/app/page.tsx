@@ -9,7 +9,7 @@ export default function Home() {
       <Intro />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
