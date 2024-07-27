@@ -27,11 +27,12 @@ export default function About() {
   you&apos;re interested in working together, please reach out to me. I&apos;d
   love to hear from you!
 </p>
-          <div className="flex justify-center lg:justify-end mt-5 lg:mt-10">
+          {/* <div className="flex justify-center lg:justify-end mt-5 lg:mt-10">
             <button className="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
               <a href="#contact">Contact me</a>
             </button>
-          </div>
+          </div> */}
+
         </div>
       </motion.div>
       <motion.div
